@@ -1,0 +1,4 @@
+body { background: #f5e6d3; }
+.hero-overlay { background: rgba(0,0,0,0.4); }
+.quick-link:hover { background: #d4a373 !important; color: #fff !important; }
+@media (max-width: 768px) { .py-16 { padding-top: 2rem; padding-bottom: 2rem; } } 

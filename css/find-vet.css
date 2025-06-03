@@ -1,0 +1,6 @@
+body { background: #f5e6d3; }
+#map { min-height: 400px; border: 2px solid #d4a373; }
+.form-input, input, select, textarea { border: 1px solid #d4a373; color: #222 !important; background: #fff; }
+.form-input:focus, input:focus, select:focus, textarea:focus { border-color: #386641; outline: none; }
+input::placeholder, textarea::placeholder { color: #888 !important; opacity: 1; }
+@media (max-width: 768px) { .py-32 { padding-top: 2rem; padding-bottom: 2rem; } } 

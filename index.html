@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Care - For the Ones Who Can't Speak</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { light: '#F5E6D3', DEFAULT: '#D4A373', dark: '#9C6644' },
+            secondary: { light: '#A7C957', DEFAULT: '#386641', dark: '#2D4A3E' },
+            accent: { light: '#BDE0FE', DEFAULT: '#90E0EF', dark: '#48CAE4' }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            display: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-display font-bold text-primary-dark">Paws & Care</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="text-gray-700 hover:text-primary-dark transition">About</a>
+                    <a href="adoption.html" class="text-gray-700 hover:text-primary-dark transition">Adoption</a>
+                    <a href="appointments.html" class="text-gray-700 hover:text-primary-dark transition">Appointments</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-primary-dark transition">Shop</a>
+                    <a href="emergency.html" class="text-gray-700 hover:text-primary-dark transition">Emergency</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-primary-dark transition">Donate</a>
+                    <a href="find-vet.html" class="text-gray-700 hover:text-primary-dark transition font-bold">Find Vets</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Video Background -->
+        <div class="absolute inset-0 w-full h-full">
+            <video 
+                class="absolute min-w-full min-h-full object-cover"
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                poster="assets/images/hero-poster.jpg">
+                <source src="assets/videos/9006739-hd_1920_1080_30fps.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-4xl md:text-6xl font-display font-bold mb-6">Paws & Care</h1>
+            <p class="text-xl md:text-2xl mb-8">For the Ones Who Can't Speak</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="adoption.html" class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full transition">Adopt Now</a>
+                <a href="emergency.html" class="bg-secondary hover:bg-secondary-dark text-white px-8 py-3 rounded-full transition">Find Help</a>
+                <a href="donate.html" class="bg-accent hover:bg-accent-dark text-white px-8 py-3 rounded-full transition">Donate</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Emergency Contact Bar -->
+    <div class="bg-red-600 text-white py-2 text-center">
+        <p class="text-sm md:text-base">
+            <i class="fas fa-phone-alt mr-2"></i>
+            Emergency Hotline: <a href="tel:+1234567890" class="font-bold hover:underline">123-456-7890</a>
+        </p>
+    </div>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-28 bg-white">
+        <div class="container mx-auto px-4 text-center flex flex-col items-center">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-8">Our Vision & Mission</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12 w-full mb-12">
+                <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Happy Dog" class="rounded-2xl shadow-lg w-full md:w-1/3 object-cover h-72">
+                <div class="flex-1 text-left">
+                    <p class="text-xl text-gray-700 mb-6">At Paws & Care, we envision a world where every animal is safe, loved, and respected. Our mission is to rescue, heal, and rehome animals in need, while educating and empowering our community to be compassionate advocates for all creatures.</p>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="bg-primary-light rounded-lg p-6 shadow flex-1">
+                            <div class="text-3xl mb-2 text-primary-dark"><i class="fas fa-hand-holding-heart"></i></div>
+                            <h3 class="text-xl font-bold text-primary-dark mb-1">Rescue</h3>
+                            <p class="text-gray-700">We save abandoned, injured, and abused animals, providing them with shelter and medical care.</p>
+                        </div>
+                        <div class="bg-primary-light rounded-lg p-6 shadow flex-1">
+                            <div class="text-3xl mb-2 text-primary-dark"><i class="fas fa-stethoscope"></i></div>
+                            <h3 class="text-xl font-bold text-primary-dark mb-1">Rehabilitate</h3>
+                            <p class="text-gray-700">Our team nurtures and rehabilitates animals, helping them recover physically and emotionally.</p>
+                        </div>
+                        <div class="bg-primary-light rounded-lg p-6 shadow flex-1">
+                            <div class="text-3xl mb-2 text-primary-dark"><i class="fas fa-home"></i></div>
+                            <h3 class="text-xl font-bold text-primary-dark mb-1">Rehome</h3>
+                            <p class="text-gray-700">We find loving forever homes for our rescues, ensuring a happy new beginning for every animal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <blockquote class="italic text-lg text-gray-600 max-w-2xl mx-auto mt-8 border-l-4 border-primary-dark pl-6 py-4">
+                “Every animal deserves a chance at happiness. Together, we can make it happen.”<br>
+                <span class="block mt-2 font-bold text-primary-dark">— Dr. Meera Kapoor, Founder</span>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Impact/Stats Section -->
+    <section class="py-28 bg-gradient-to-b from-primary-light to-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-10">Our Impact</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-12">With the support of our community, we've made a real difference in the lives of thousands of animals and families.</p>
+            <div class="grid md:grid-cols-4 gap-10 mt-8">
+                <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center">
+                    <div class="text-5xl text-primary-dark mb-3"><i class="fas fa-paw"></i></div>
+                    <div class="text-4xl font-bold mb-2">1,200+</div>
+                    <div class="text-gray-700">Animals Rescued</div>
+                </div>
+                <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center">
+                    <div class="text-5xl text-primary-dark mb-3"><i class="fas fa-heart"></i></div>
+                    <div class="text-4xl font-bold mb-2">950+</div>
+                    <div class="text-gray-700">Successful Adoptions</div>
+                </div>
+                <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center">
+                    <div class="text-5xl text-primary-dark mb-3"><i class="fas fa-users"></i></div>
+                    <div class="text-4xl font-bold mb-2">300+</div>
+                    <div class="text-gray-700">Active Volunteers</div>
+                </div>
+                <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center">
+                    <div class="text-5xl text-primary-dark mb-3"><i class="fas fa-calendar-check"></i></div>
+                    <div class="text-4xl font-bold mb-2">15</div>
+                    <div class="text-gray-700">Years Serving Animals</div>
+                </div>
+            </div>
+            <a href="about.html" class="inline-block mt-12 bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-full font-bold text-lg transition">See Our Work</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-28 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-10">Happy Tails & Kind Words</h2>
+            <div class="grid md:grid-cols-3 gap-10 mt-8">
+                <div class="bg-primary-light rounded-2xl p-10 shadow-lg flex flex-col items-center">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya S." class="w-20 h-20 rounded-full mb-4 object-cover border-4 border-primary-dark">
+                    <div class="flex mb-2 text-accent text-xl">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="italic text-gray-700 mb-4">“Adopting Max from Paws & Care changed our lives. He's the sweetest companion and the adoption process was so smooth!”</p>
+                    <div class="font-bold text-primary-dark">— Priya S.</div>
+                </div>
+                <div class="bg-primary-light rounded-2xl p-10 shadow-lg flex flex-col items-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul M." class="w-20 h-20 rounded-full mb-4 object-cover border-4 border-primary-dark">
+                    <div class="flex mb-2 text-accent text-xl">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="italic text-gray-700 mb-4">“The team truly cares about every animal. Volunteering here has been a rewarding experience!”</p>
+                    <div class="font-bold text-primary-dark">— Rahul M.</div>
+                </div>
+                <div class="bg-primary-light rounded-2xl p-10 shadow-lg flex flex-col items-center">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ananya T." class="w-20 h-20 rounded-full mb-4 object-cover border-4 border-primary-dark">
+                    <div class="flex mb-2 text-accent text-xl">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="italic text-gray-700 mb-4">“I was able to foster and then adopt a lovely cat. Thank you for all the support and guidance!”</p>
+                    <div class="font-bold text-primary-dark">— Ananya T.</div>
+                </div>
+            </div>
+            <a href="about.html" class="inline-block mt-12 bg-accent hover:bg-accent-dark text-white px-10 py-4 rounded-full font-bold text-lg transition">Share Your Story</a>
+        </div>
+    </section>
+
+    <!-- How You Can Help Section -->
+    <section class="py-28 bg-primary-light">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-10">How You Can Help</h2>
+            <div class="grid md:grid-cols-4 gap-10 mt-8">
+                <a href="adoption.html" class="block bg-white rounded-2xl shadow-lg p-10 hover:bg-primary hover:text-white transition font-bold text-xl">
+                    <div class="text-4xl mb-2 text-primary-dark"><i class="fas fa-dog"></i></div>
+                    Adopt
+                    <p class="text-base font-normal text-gray-700 mt-2">Give a loving home to a pet in need.</p>
+                </a>
+                <a href="donate.html" class="block bg-white rounded-2xl shadow-lg p-10 hover:bg-primary hover:text-white transition font-bold text-xl">
+                    <div class="text-4xl mb-2 text-primary-dark"><i class="fas fa-donate"></i></div>
+                    Donate
+                    <p class="text-base font-normal text-gray-700 mt-2">Support our rescue and care efforts.</p>
+                </a>
+                <a href="about.html" class="block bg-white rounded-2xl shadow-lg p-10 hover:bg-primary hover:text-white transition font-bold text-xl">
+                    <div class="text-4xl mb-2 text-primary-dark"><i class="fas fa-hands-helping"></i></div>
+                    Volunteer
+                    <p class="text-base font-normal text-gray-700 mt-2">Join our team and make a difference.</p>
+                </a>
+                <a href="about.html" class="block bg-white rounded-2xl shadow-lg p-10 hover:bg-primary hover:text-white transition font-bold text-xl">
+                    <div class="text-4xl mb-2 text-primary-dark"><i class="fas fa-home-heart"></i></div>
+                    Foster
+                    <p class="text-base font-normal text-gray-700 mt-2">Provide temporary care for animals.</p>
+                </a>
+            </div>
+            <a href="about.html" class="inline-block mt-12 bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-full font-bold text-lg transition">See All Ways to Help</a>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-primary-dark mb-6">Stay Connected</h2>
+            <p class="text-lg text-gray-700 mb-6">Subscribe to our newsletter for updates on rescues, adoptions, and events.</p>
+            <form class="max-w-xl mx-auto flex flex-col md:flex-row gap-4 justify-center mb-4">
+                <input type="email" required placeholder="Your Email Address" class="form-input flex-1" style="min-width:220px;">
+                <button type="submit" class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-bold transition">Subscribe</button>
+            </form>
+            <div class="flex justify-center gap-6 mt-4">
+                <a href="#" class="text-2xl text-primary-dark hover:text-accent"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl text-primary-dark hover:text-accent"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl text-primary-dark hover:text-accent"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-2xl text-primary-dark hover:text-accent"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="text-xs text-gray-500 mt-4">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">&copy; 2025 Paws & Care. All rights reserved.</div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="js/index.js"></script>
+</body>
+</html> 

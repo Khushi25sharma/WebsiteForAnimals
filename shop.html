@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Paws & Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              light: '#F5E6D3',
+              DEFAULT: '#D4A373',
+              dark: '#9C6644',
+            },
+            secondary: {
+              light: '#A7C957',
+              DEFAULT: '#386641',
+              dark: '#2D4A3E',
+            },
+            accent: {
+              light: '#BDE0FE',
+              DEFAULT: '#90E0EF',
+              dark: '#48CAE4',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            display: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-display font-bold text-primary-dark">Paws & Care</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="text-gray-700 hover:text-primary-dark transition">About</a>
+                    <a href="adoption.html" class="text-gray-700 hover:text-primary-dark transition">Adoption</a>
+                    <a href="appointments.html" class="text-gray-700 hover:text-primary-dark transition">Appointments</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-primary-dark transition font-bold">Shop</a>
+                    <a href="emergency.html" class="text-gray-700 hover:text-primary-dark transition">Emergency</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-primary-dark transition">Donate</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Shop Section -->
+    <section class="py-32 bg-white min-h-screen">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary-dark mb-4">Shop for Essentials</h2>
+                <p class="text-gray-700 text-lg max-w-2xl mx-auto">Browse our curated selection of pet accessories and essentials.</p>
+            </div>
+            <!-- Product Grid (sample cards) -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=800&q=80" alt="Dog Collar" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary-dark mb-2">Premium Dog Collar</h3>
+                        <p class="text-gray-600 mb-2">Adjustable, durable, and stylish for all breeds.</p>
+                        <p class="text-primary-dark font-bold mb-4">₹499</p>
+                        <button class="w-full bg-primary hover:bg-primary-dark text-white py-2 rounded-lg transition">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=800&q=80" alt="Cat Toy" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary-dark mb-2">Interactive Cat Toy</h3>
+                        <p class="text-gray-600 mb-2">Keeps your cat active and entertained for hours.</p>
+                        <p class="text-primary-dark font-bold mb-4">₹299</p>
+                        <button class="w-full bg-primary hover:bg-primary-dark text-white py-2 rounded-lg transition">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://images.unsplash.com/photo-1518715308788-3005759c61d4?auto=format&fit=crop&w=800&q=80" alt="Pet Bed" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary-dark mb-2">Comfy Pet Bed</h3>
+                        <p class="text-gray-600 mb-2">Soft, washable, and perfect for dogs and cats.</p>
+                        <p class="text-primary-dark font-bold mb-4">₹899</p>
+                        <button class="w-full bg-primary hover:bg-primary-dark text-white py-2 rounded-lg transition">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">&copy; 2025 Paws & Care. All rights reserved.</div>
+    </footer>
+    <script src="js/shop.js"></script>
+</body>
+</html> 

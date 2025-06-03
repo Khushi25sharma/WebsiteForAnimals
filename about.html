@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Paws & Care</title>
+    <!-- Tailwind CDN for rapid prototyping -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              light: '#F5E6D3',
+              DEFAULT: '#D4A373',
+              dark: '#9C6644',
+            },
+            secondary: {
+              light: '#A7C957',
+              DEFAULT: '#386641',
+              dark: '#2D4A3E',
+            },
+            accent: {
+              light: '#BDE0FE',
+              DEFAULT: '#90E0EF',
+              dark: '#48CAE4',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            display: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-display font-bold text-primary-dark">
+                    Paws & Care
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="text-gray-700 hover:text-primary-dark transition font-bold">About</a>
+                    <a href="adoption.html" class="text-gray-700 hover:text-primary-dark transition">Adoption</a>
+                    <a href="appointments.html" class="text-gray-700 hover:text-primary-dark transition">Appointments</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-primary-dark transition">Shop</a>
+                    <a href="emergency.html" class="text-gray-700 hover:text-primary-dark transition">Emergency</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-primary-dark transition">Donate</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="py-32 bg-primary-light min-h-screen flex items-center justify-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary-dark mb-4">About Paws & Care</h2>
+                <p class="text-gray-700 text-lg">Dedicated to making a difference in the lives of animals and their human companions.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-dark mb-3">Our Mission</h3>
+                    <p class="text-gray-600">To provide comprehensive care and support for animals in need, ensuring they find loving homes and receive the best possible veterinary care.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-secondary text-4xl mb-4">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-dark mb-3">What We Do</h3>
+                    <p class="text-gray-600">From rescue and rehabilitation to adoption services and veterinary care, we're committed to improving animal welfare in our community.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-dark mb-3">Our Impact</h3>
+                    <p class="text-gray-600">Over 1,000 animals rescued and rehomed, providing essential care and support to countless pets and their families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            &copy; 2025 Paws & Care. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/about.js"></script>
+</body>
+</html> 

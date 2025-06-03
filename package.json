@@ -1,0 +1,25 @@
+{
+  "name": "animal-care-website",
+  "version": "1.0.0",
+  "description": "A comprehensive animal care website with adoption, vet services, and more",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "aos": "^2.3.4",
+    "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8",
+    "vite": "^5.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Nearby Vets | Paws & Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              light: '#F5E6D3',
+              DEFAULT: '#D4A373',
+              dark: '#9C6644',
+            },
+            secondary: {
+              light: '#A7C957',
+              DEFAULT: '#386641',
+              dark: '#2D4A3E',
+            },
+            accent: {
+              light: '#BDE0FE',
+              DEFAULT: '#90E0EF',
+              dark: '#48CAE4',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            display: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/find-vet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-display font-bold text-primary-dark">Paws & Care</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="text-gray-700 hover:text-primary-dark transition">About</a>
+                    <a href="adoption.html" class="text-gray-700 hover:text-primary-dark transition">Adoption</a>
+                    <a href="appointments.html" class="text-gray-700 hover:text-primary-dark transition">Appointments</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-primary-dark transition">Shop</a>
+                    <a href="find-vet.html" class="text-gray-700 hover:text-primary-dark transition font-bold">Find Vets</a>
+                    <a href="emergency.html" class="text-gray-700 hover:text-primary-dark transition">Emergency</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-primary-dark transition">Donate</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Find Vets Section -->
+    <section class="py-32 bg-primary-light min-h-screen">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary-dark mb-4">Find Nearby Vets</h2>
+                <p class="text-gray-700 text-lg">Search for veterinary clinics near you or in your city.</p>
+            </div>
+            <div class="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-8 mb-8 flex flex-col md:flex-row gap-4 items-center">
+                <input id="cityInput" type="text" placeholder="Enter city or area" class="form-input flex-1" />
+                <button id="searchBtn" class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg font-bold transition">Search</button>
+                <button id="locateBtn" class="bg-accent hover:bg-accent-dark text-white px-6 py-2 rounded-lg font-bold transition"><i class="fas fa-location-arrow"></i> Use My Location</button>
+            </div>
+            <div id="map" class="w-full h-[400px] rounded-lg shadow-lg"></div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">&copy; 2025 Paws & Care. All rights reserved.</div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/find-vet.js"></script>
+</body>
+</html> 
