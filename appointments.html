@@ -1,32 +1,87 @@
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        primary: {
-          light: '#F5E6D3',
-          DEFAULT: '#D4A373',
-          dark: '#9C6644',
-        },
-        secondary: {
-          light: '#A7C957',
-          DEFAULT: '#386641',
-          dark: '#2D4A3E',
-        },
-        accent: {
-          light: '#BDE0FE',
-          DEFAULT: '#90E0EF',
-          dark: '#48CAE4',
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - Paws & Care</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { light: '#F5E6D3', DEFAULT: '#D4A373', dark: '#9C6644' },
+            secondary: { light: '#A7C957', DEFAULT: '#386641', dark: '#2D4A3E' },
+            accent: { light: '#BDE0FE', DEFAULT: '#90E0EF', dark: '#48CAE4' }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            display: ['Playfair Display', 'serif'],
+          }
         }
-      },
-      fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        display: ['Playfair Display', 'serif'],
       }
     }
-  }
-}
-</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="css/appointments.css"> 
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/appointments.css">
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-display font-bold text-primary-dark">Paws & Care</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="text-gray-700 hover:text-primary-dark transition">About</a>
+                    <a href="adoption.html" class="text-gray-700 hover:text-primary-dark transition">Adoption</a>
+                    <a href="appointments.html" class="text-gray-700 hover:text-primary-dark transition">Appointments</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-primary-dark transition">Shop</a>
+                    <a href="emergency.html" class="text-gray-700 hover:text-primary-dark transition">Emergency</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-primary-dark transition">Donate</a>
+                    <a href="find-vet.html" class="text-gray-700 hover:text-primary-dark transition font-bold">Find Vets</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Emergency Contact Bar -->
+    <div class="bg-red-600 text-white py-2 text-center">
+        <p class="text-sm md:text-base">
+            <i class="fas fa-phone-alt mr-2"></i>
+            Emergency Hotline: <a href="tel:+1234567890" class="font-bold hover:underline">123-456-7890</a>
+        </p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <!-- Add your appointments page content here -->
+    </main>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html> 
