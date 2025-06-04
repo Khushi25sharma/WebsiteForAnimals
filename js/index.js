@@ -152,13 +152,11 @@ class ChatWindow {
                     </div>
                 </div>
             </div>
-            <div class="p-4 border-t">
-                <div class="flex gap-2">
-                    <input type="text" placeholder="Type your message..." class="flex-1 form-input chat-input">
-                    <button class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg transition send-button">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </div>
+            <div class="flex gap-2 p-4 border-t">
+                <input type="text" id="chat-message" name="chat-message" placeholder="Type your message..." class="flex-1 form-input chat-input">
+                <button class="send-button bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg transition">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
             </div>
         `;
 
