@@ -79,13 +79,13 @@
         </div>
 
         <!-- Hero Content -->
-        <div class="relative z-10 text-center text-white px-4">
+        <div class="relative z-10 text-center text-white px-4" data-aos="fade-up">
             <h1 class="text-4xl md:text-6xl font-display font-bold mb-6">Paws & Care</h1>
             <p class="text-xl md:text-2xl mb-8">For the Ones Who Can't Speak</p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="adoption.html" class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full transition">Adopt Now</a>
-                <a href="emergency.html" class="bg-secondary hover:bg-secondary-dark text-white px-8 py-3 rounded-full transition">Find Help</a>
-                <a href="donate.html" class="bg-accent hover:bg-accent-dark text-white px-8 py-3 rounded-full transition">Donate</a>
+                <a href="adoption.html" class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full transition transform hover:scale-105">Adopt Now</a>
+                <a href="emergency.html" class="bg-secondary hover:bg-secondary-dark text-white px-8 py-3 rounded-full transition transform hover:scale-105">Find Help</a>
+                <a href="donate.html" class="bg-accent hover:bg-accent-dark text-white px-8 py-3 rounded-full transition transform hover:scale-105">Donate</a>
             </div>
         </div>
 
@@ -96,174 +96,347 @@
     </section>
 
     <!-- Emergency Contact Bar -->
-    <div class="bg-red-600 text-white py-2 text-center">
+    <div class="bg-red-600 text-white py-2 text-center sticky top-0 z-40">
         <p class="text-sm md:text-base">
             <i class="fas fa-phone-alt mr-2"></i>
             Emergency Hotline: <a href="tel:+1234567890" class="font-bold hover:underline">123-456-7890</a>
         </p>
     </div>
 
-    <!-- Vision & Mission Section -->
-    <section class="py-28 bg-white">
-        <div class="container mx-auto px-4 text-center flex flex-col items-center">
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-8">Our Vision & Mission</h2>
-            <div class="flex flex-col md:flex-row items-center gap-12 w-full mb-12">
-                <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Happy Dog" class="rounded-2xl shadow-lg w-full md:w-1/3 object-cover h-72">
-                <div class="flex-1 text-left">
-                    <p class="text-xl text-gray-700 mb-6">At Paws & Care, we envision a world where every animal is safe, loved, and respected. Our mission is to rescue, heal, and rehome animals in need, while educating and empowering our community to be compassionate advocates for all creatures.</p>
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="bg-primary-light rounded-lg p-6 shadow flex-1">
-                            <div class="text-3xl mb-2 text-primary-dark"><i class="fas fa-hand-holding-heart"></i></div>
-                            <h3 class="text-xl font-bold text-primary-dark mb-1">Rescue</h3>
-                            <p class="text-gray-700">We save abandoned, injured, and abused animals, providing them with shelter and medical care.</p>
+    <!-- Featured Animal of the Week -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Featured Animal of the Week</h2>
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div class="md:flex">
+                    <div class="md:w-1/2 relative">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" alt="Featured Dog" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <h3 class="text-3xl font-display font-bold text-primary-dark mb-4">Meet Max</h3>
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="bg-primary-light text-primary-dark px-4 py-1 rounded-full text-sm">2 years old</span>
+                            <span class="bg-primary-light text-primary-dark px-4 py-1 rounded-full text-sm">Golden Retriever</span>
                         </div>
-                        <div class="bg-primary-light rounded-lg p-6 shadow flex-1">
-                            <div class="text-3xl mb-2 text-primary-dark"><i class="fas fa-stethoscope"></i></div>
-                            <h3 class="text-xl font-bold text-primary-dark mb-1">Rehabilitate</h3>
-                            <p class="text-gray-700">Our team nurtures and rehabilitates animals, helping them recover physically and emotionally.</p>
-                        </div>
-                        <div class="bg-primary-light rounded-lg p-6 shadow flex-1">
-                            <div class="text-3xl mb-2 text-primary-dark"><i class="fas fa-home"></i></div>
-                            <h3 class="text-xl font-bold text-primary-dark mb-1">Rehome</h3>
-                            <p class="text-gray-700">We find loving forever homes for our rescues, ensuring a happy new beginning for every animal.</p>
-                        </div>
+                        <p class="text-gray-700 mb-8">Max is a gentle soul who loves long walks and belly rubs. After being rescued from a difficult situation, he's now ready to find his forever home. His playful personality and loving nature make him the perfect companion for an active family.</p>
+                        <a href="adoption.html" class="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-lg font-bold transition transform hover:scale-105">
+                            Adopt Max
+                        </a>
                     </div>
                 </div>
             </div>
-            <blockquote class="italic text-lg text-gray-600 max-w-2xl mx-auto mt-8 border-l-4 border-primary-dark pl-6 py-4">
-                “Every animal deserves a chance at happiness. Together, we can make it happen.”<br>
-                <span class="block mt-2 font-bold text-primary-dark">— Dr. Meera Kapoor, Founder</span>
-            </blockquote>
         </div>
     </section>
 
-    <!-- Impact/Stats Section -->
-    <section class="py-28 bg-gradient-to-b from-primary-light to-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-10">Our Impact</h2>
-            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-12">With the support of our community, we've made a real difference in the lives of thousands of animals and families.</p>
-            <div class="grid md:grid-cols-4 gap-10 mt-8">
-                <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center">
-                    <div class="text-5xl text-primary-dark mb-3"><i class="fas fa-paw"></i></div>
-                    <div class="text-4xl font-bold mb-2">1,200+</div>
-                    <div class="text-gray-700">Animals Rescued</div>
-                </div>
-                <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center">
-                    <div class="text-5xl text-primary-dark mb-3"><i class="fas fa-heart"></i></div>
-                    <div class="text-4xl font-bold mb-2">950+</div>
-                    <div class="text-gray-700">Successful Adoptions</div>
-                </div>
-                <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center">
-                    <div class="text-5xl text-primary-dark mb-3"><i class="fas fa-users"></i></div>
-                    <div class="text-4xl font-bold mb-2">300+</div>
-                    <div class="text-gray-700">Active Volunteers</div>
-                </div>
-                <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center">
-                    <div class="text-5xl text-primary-dark mb-3"><i class="fas fa-calendar-check"></i></div>
-                    <div class="text-4xl font-bold mb-2">15</div>
-                    <div class="text-gray-700">Years Serving Animals</div>
+    <!-- Success Story Spotlight -->
+    <section class="py-20 bg-primary-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Success Story Spotlight</h2>
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <h3 class="text-3xl font-display font-bold text-primary-dark mb-4">Luna's Journey Home</h3>
+                        <p class="text-gray-700 mb-6">Found abandoned and injured, Luna's recovery journey touched everyone's hearts. Today, she's thriving in her forever home with the Sharma family.</p>
+                        <blockquote class="border-l-4 border-primary-dark pl-4 mb-6">
+                            <p class="italic text-gray-600">"Luna has brought so much joy to our family. Her resilience and loving nature inspire us every day."</p>
+                            <p class="font-bold text-primary-dark mt-2">— Priya Sharma, Luna's Mom</p>
+                        </blockquote>
+                        <a href="about.html" class="text-primary-dark hover:text-primary font-bold">Read Full Story →</a>
+                    </div>
+                    <div class="md:w-1/2 relative">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" alt="Luna's Success Story" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    </div>
                 </div>
             </div>
-            <a href="about.html" class="inline-block mt-12 bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-full font-bold text-lg transition">See Our Work</a>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-28 bg-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-10">Happy Tails & Kind Words</h2>
-            <div class="grid md:grid-cols-3 gap-10 mt-8">
-                <div class="bg-primary-light rounded-2xl p-10 shadow-lg flex flex-col items-center">
-                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya S." class="w-20 h-20 rounded-full mb-4 object-cover border-4 border-primary-dark">
-                    <div class="flex mb-2 text-accent text-xl">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+    <!-- Did You Know? Facts Carousel -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Did You Know?</h2>
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-primary-light rounded-2xl p-8 md:p-12 relative overflow-hidden">
+                    <div class="facts-carousel">
+                        <div class="fact-slide">
+                            <div class="text-4xl text-primary-dark mb-4"><i class="fas fa-chocolate"></i></div>
+                            <h3 class="text-2xl font-bold text-primary-dark mb-4">Chocolate is Toxic to Dogs</h3>
+                            <p class="text-gray-700">Even small amounts of chocolate can be dangerous for dogs. Keep all chocolate products out of reach!</p>
+                        </div>
                     </div>
-                    <p class="italic text-gray-700 mb-4">“Adopting Max from Paws & Care changed our lives. He's the sweetest companion and the adoption process was so smooth!”</p>
-                    <div class="font-bold text-primary-dark">— Priya S.</div>
-                </div>
-                <div class="bg-primary-light rounded-2xl p-10 shadow-lg flex flex-col items-center">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul M." class="w-20 h-20 rounded-full mb-4 object-cover border-4 border-primary-dark">
-                    <div class="flex mb-2 text-accent text-xl">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <div class="flex justify-center mt-8 gap-4">
+                        <button class="fact-nav bg-white p-2 rounded-full shadow hover:bg-primary hover:text-white transition">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="fact-nav bg-white p-2 rounded-full shadow hover:bg-primary hover:text-white transition">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
-                    <p class="italic text-gray-700 mb-4">“The team truly cares about every animal. Volunteering here has been a rewarding experience!”</p>
-                    <div class="font-bold text-primary-dark">— Rahul M.</div>
-                </div>
-                <div class="bg-primary-light rounded-2xl p-10 shadow-lg flex flex-col items-center">
-                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ananya T." class="w-20 h-20 rounded-full mb-4 object-cover border-4 border-primary-dark">
-                    <div class="flex mb-2 text-accent text-xl">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="italic text-gray-700 mb-4">“I was able to foster and then adopt a lovely cat. Thank you for all the support and guidance!”</p>
-                    <div class="font-bold text-primary-dark">— Ananya T.</div>
                 </div>
             </div>
-            <a href="about.html" class="inline-block mt-12 bg-accent hover:bg-accent-dark text-white px-10 py-4 rounded-full font-bold text-lg transition">Share Your Story</a>
         </div>
     </section>
 
-    <!-- How You Can Help Section -->
-    <section class="py-28 bg-primary-light">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-10">How You Can Help</h2>
-            <div class="grid md:grid-cols-4 gap-10 mt-8">
-                <a href="adoption.html" class="block bg-white rounded-2xl shadow-lg p-10 hover:bg-primary hover:text-white transition font-bold text-xl">
-                    <div class="text-4xl mb-2 text-primary-dark"><i class="fas fa-dog"></i></div>
-                    Adopt
-                    <p class="text-base font-normal text-gray-700 mt-2">Give a loving home to a pet in need.</p>
-                </a>
-                <a href="donate.html" class="block bg-white rounded-2xl shadow-lg p-10 hover:bg-primary hover:text-white transition font-bold text-xl">
-                    <div class="text-4xl mb-2 text-primary-dark"><i class="fas fa-donate"></i></div>
-                    Donate
-                    <p class="text-base font-normal text-gray-700 mt-2">Support our rescue and care efforts.</p>
-                </a>
-                <a href="about.html" class="block bg-white rounded-2xl shadow-lg p-10 hover:bg-primary hover:text-white transition font-bold text-xl">
-                    <div class="text-4xl mb-2 text-primary-dark"><i class="fas fa-hands-helping"></i></div>
-                    Volunteer
-                    <p class="text-base font-normal text-gray-700 mt-2">Join our team and make a difference.</p>
-                </a>
-                <a href="about.html" class="block bg-white rounded-2xl shadow-lg p-10 hover:bg-primary hover:text-white transition font-bold text-xl">
-                    <div class="text-4xl mb-2 text-primary-dark"><i class="fas fa-home-heart"></i></div>
-                    Foster
-                    <p class="text-base font-normal text-gray-700 mt-2">Provide temporary care for animals.</p>
+    <!-- Impact Map -->
+    <section class="py-20 bg-primary-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Our Impact Across India</h2>
+            <div class="max-w-6xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="text-center p-6 bg-primary-light rounded-xl">
+                            <div class="text-4xl font-bold text-primary-dark mb-2">1,200+</div>
+                            <p class="text-gray-700">Delhi</p>
+                        </div>
+                        <div class="text-center p-6 bg-primary-light rounded-xl">
+                            <div class="text-4xl font-bold text-primary-dark mb-2">850+</div>
+                            <p class="text-gray-700">Mumbai</p>
+                        </div>
+                        <div class="text-center p-6 bg-primary-light rounded-xl">
+                            <div class="text-4xl font-bold text-primary-dark mb-2">650+</div>
+                            <p class="text-gray-700">Bangalore</p>
+                        </div>
+                        <div class="text-center p-6 bg-primary-light rounded-xl">
+                            <div class="text-4xl font-bold text-primary-dark mb-2">450+</div>
+                            <p class="text-gray-700">Chennai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Behind the Scenes Video -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Behind the Scenes</h2>
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative rounded-2xl overflow-hidden shadow-xl">
+                    <video 
+                        class="w-full"
+                        autoplay 
+                        muted 
+                        loop 
+                        playsinline
+                        poster="assets/images/video-poster.jpg">
+                        <source src="assets/videos/behind-scenes.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-2">A Day in the Life</h3>
+                        <p class="text-lg">Watch our volunteers in action, caring for and finding homes for animals in need.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Match Quiz Teaser -->
+    <section class="py-20 bg-primary-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-12 text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary-dark mb-6">Find Your Perfect Match</h2>
+                <p class="text-lg text-gray-700 mb-8">Not sure which pet would be the best fit for your lifestyle? Take our quick quiz to find your perfect companion!</p>
+                <a href="adoption.html" class="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-lg font-bold transition transform hover:scale-105">
+                    Take the Quiz
                 </a>
             </div>
-            <a href="about.html" class="inline-block mt-12 bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-full font-bold text-lg transition">See All Ways to Help</a>
+        </div>
+    </section>
+
+    <!-- Meet Our Vets -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Meet Our Vets</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2" alt="Dr. Meera Kapoor" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-primary-dark mb-2">Dr. Meera Kapoor</h3>
+                        <p class="text-gray-600 mb-4">Chief Veterinarian</p>
+                        <p class="text-gray-700 mb-4">Specializing in emergency care and surgery with over 15 years of experience.</p>
+                        <button class="text-primary-dark hover:text-primary font-bold">Chat with Dr. Kapoor →</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d" alt="Dr. Rahul Singh" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-primary-dark mb-2">Dr. Rahul Singh</h3>
+                        <p class="text-gray-600 mb-4">Behavioral Specialist</p>
+                        <p class="text-gray-700 mb-4">Expert in animal behavior and rehabilitation techniques.</p>
+                        <button class="text-primary-dark hover:text-primary font-bold">Chat with Dr. Singh →</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f" alt="Dr. Ananya Patel" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-primary-dark mb-2">Dr. Ananya Patel</h3>
+                        <p class="text-gray-600 mb-4">Preventive Care Specialist</p>
+                        <p class="text-gray-700 mb-4">Focusing on preventive care and nutrition for pets.</p>
+                        <button class="text-primary-dark hover:text-primary font-bold">Chat with Dr. Patel →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Owner Tips -->
+    <section class="py-20 bg-primary-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Pet Owner Tips</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-6">
+                        <div class="text-4xl text-primary-dark mb-4"><i class="fas fa-first-aid"></i></div>
+                        <h3 class="font-bold text-xl text-primary-dark mb-4">Pet First-Aid Kit Essentials</h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Bandages and gauze</li>
+                            <li>• Antiseptic solution</li>
+                            <li>• Digital thermometer</li>
+                            <li>• Emergency contact numbers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-6">
+                        <div class="text-4xl text-primary-dark mb-4"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h3 class="font-bold text-xl text-primary-dark mb-4">Signs Your Pet Needs Help</h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Changes in eating habits</li>
+                            <li>• Unusual lethargy</li>
+                            <li>• Difficulty breathing</li>
+                            <li>• Sudden behavior changes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-6">
+                        <div class="text-4xl text-primary-dark mb-4"><i class="fas fa-clipboard-check"></i></div>
+                        <h3 class="font-bold text-xl text-primary-dark mb-4">First-Time Adopter Checklist</h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Pet-proof your home</li>
+                            <li>• Prepare essential supplies</li>
+                            <li>• Schedule vet check-up</li>
+                            <li>• Plan for training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Upcoming Events</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-primary-light rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-white rounded-lg p-4 text-center min-w-[100px]">
+                            <div class="text-2xl font-bold text-primary-dark">15</div>
+                            <div class="text-primary-dark">Mar</div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-primary-dark mb-2">Adoption Drive</h3>
+                            <p class="text-gray-700 mb-4">Join us for our monthly adoption event at Central Park. Meet our lovely pets looking for homes!</p>
+                            <a href="#" class="text-primary-dark hover:text-primary font-bold">RSVP Now →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary-light rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-white rounded-lg p-4 text-center min-w-[100px]">
+                            <div class="text-2xl font-bold text-primary-dark">22</div>
+                            <div class="text-primary-dark">Mar</div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-primary-dark mb-2">Vaccination Camp</h3>
+                            <p class="text-gray-700 mb-4">Free vaccination camp for stray animals. Volunteers needed!</p>
+                            <a href="#" class="text-primary-dark hover:text-primary font-bold">Join Us →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Newsletter Signup Section -->
     <section class="py-24 bg-white">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-display font-bold text-primary-dark mb-6">Stay Connected</h2>
-            <p class="text-lg text-gray-700 mb-6">Subscribe to our newsletter for updates on rescues, adoptions, and events.</p>
-            <form class="max-w-xl mx-auto flex flex-col md:flex-row gap-4 justify-center mb-4">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-primary-dark mb-6" data-aos="fade-up">Stay Connected</h2>
+            <p class="text-lg text-gray-700 mb-6" data-aos="fade-up" data-aos-delay="100">Subscribe to our newsletter for updates on rescues, adoptions, and events.</p>
+            <form class="max-w-xl mx-auto flex flex-col md:flex-row gap-4 justify-center mb-4" data-aos="fade-up" data-aos-delay="200">
                 <input type="email" required placeholder="Your Email Address" class="form-input flex-1" style="min-width:220px;">
-                <button type="submit" class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-bold transition">Subscribe</button>
+                <button type="submit" class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-bold transition transform hover:scale-105">Subscribe</button>
             </form>
-            <div class="flex justify-center gap-6 mt-4">
-                <a href="#" class="text-2xl text-primary-dark hover:text-accent"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-2xl text-primary-dark hover:text-accent"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-2xl text-primary-dark hover:text-accent"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-2xl text-primary-dark hover:text-accent"><i class="fab fa-youtube"></i></a>
+            <div class="flex justify-center gap-6 mt-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#" class="text-2xl text-primary-dark hover:text-accent transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl text-primary-dark hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl text-primary-dark hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-2xl text-primary-dark hover:text-accent transition"><i class="fab fa-youtube"></i></a>
             </div>
             <p class="text-xs text-gray-500 mt-4">We respect your privacy. Unsubscribe at any time.</p>
         </div>
     </section>
 
+    <!-- Live Chat Button -->
+    <div class="fixed bottom-6 right-6 z-50" data-aos="fade-up">
+        <button class="bg-primary hover:bg-primary-dark text-white rounded-full p-4 shadow-lg transition transform hover:scale-105">
+            <i class="fas fa-comments text-2xl"></i>
+        </button>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-primary-dark text-white py-6 mt-12">
-        <div class="container mx-auto px-4 text-center">&copy; 2025 Paws & Care. All rights reserved.</div>
+    <footer class="bg-primary-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-display font-bold mb-4">Paws & Care</h3>
+                    <p class="text-gray-300">Making a difference in the lives of animals, one paw at a time.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="adoption.html" class="text-gray-300 hover:text-white transition">Adopt</a></li>
+                        <li><a href="donate.html" class="text-gray-300 hover:text-white transition">Donate</a></li>
+                        <li><a href="volunteer.html" class="text-gray-300 hover:text-white transition">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-phone mr-2"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@pawsandcare.org</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Pet Street, City</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-youtube text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Paws & Care. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- AOS Animation Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/index.js"></script>
     <script>
         AOS.init({
-            duration: 1000,
+            duration: 800,
             once: true
         });
     </script>
-    <script src="js/index.js"></script>
 </body>
 </html> 
