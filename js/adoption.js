@@ -60,7 +60,8 @@ function renderAdoptionListings(animals) {
 // Function to fetch and render adoption listings
 async function loadAdoptionListings() {
     try {
-        const response = await fetch('https://khushi25sharma.github.io/WebsiteForAnimals/data/adoption.json');
+        // Use relative path that works with GitHub Pages
+        const response = await fetch('./data/adoption.json');
         if (!response.ok) {
             throw new Error('Failed to fetch adoption data');
         }
