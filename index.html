@@ -230,7 +230,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+                </div>
     </section>
 
     <!-- Pet Match Quiz Teaser -->
@@ -242,42 +242,16 @@
                 <a href="adoption.html" class="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-lg font-bold transition transform hover:scale-105">
                     Take the Quiz
                 </a>
-            </div>
-        </div>
+                </div>
+                </div>
     </section>
 
     <!-- Meet Our Vets -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Meet Our Vets</h2>
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2" alt="Dr. Meera Kapoor" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-primary-dark mb-2">Dr. Meera Kapoor</h3>
-                        <p class="text-gray-600 mb-4">Chief Veterinarian</p>
-                        <p class="text-gray-700 mb-4">Specializing in emergency care and surgery with over 15 years of experience.</p>
-                        <button class="text-primary-dark hover:text-primary font-bold">Chat with Dr. Kapoor →</button>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d" alt="Dr. Rahul Singh" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-primary-dark mb-2">Dr. Rahul Singh</h3>
-                        <p class="text-gray-600 mb-4">Behavioral Specialist</p>
-                        <p class="text-gray-700 mb-4">Expert in animal behavior and rehabilitation techniques.</p>
-                        <button class="text-primary-dark hover:text-primary font-bold">Chat with Dr. Singh →</button>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f" alt="Dr. Ananya Patel" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-primary-dark mb-2">Dr. Ananya Patel</h3>
-                        <p class="text-gray-600 mb-4">Preventive Care Specialist</p>
-                        <p class="text-gray-700 mb-4">Focusing on preventive care and nutrition for pets.</p>
-                        <button class="text-primary-dark hover:text-primary font-bold">Chat with Dr. Patel →</button>
-                    </div>
-                </div>
+            <div id="vetsGrid" class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Dynamic vet cards will be inserted here -->
             </div>
         </div>
     </section>
@@ -331,33 +305,8 @@
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-dark mb-12 text-center" data-aos="fade-up">Upcoming Events</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-primary-light rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-start gap-4">
-                        <div class="bg-white rounded-lg p-4 text-center min-w-[100px]">
-                            <div class="text-2xl font-bold text-primary-dark">15</div>
-                            <div class="text-primary-dark">Mar</div>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-xl text-primary-dark mb-2">Adoption Drive</h3>
-                            <p class="text-gray-700 mb-4">Join us for our monthly adoption event at Central Park. Meet our lovely pets looking for homes!</p>
-                            <a href="#" class="text-primary-dark hover:text-primary font-bold">RSVP Now →</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-primary-light rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-start gap-4">
-                        <div class="bg-white rounded-lg p-4 text-center min-w-[100px]">
-                            <div class="text-2xl font-bold text-primary-dark">22</div>
-                            <div class="text-primary-dark">Mar</div>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-xl text-primary-dark mb-2">Vaccination Camp</h3>
-                            <p class="text-gray-700 mb-4">Free vaccination camp for stray animals. Volunteers needed!</p>
-                            <a href="#" class="text-primary-dark hover:text-primary font-bold">Join Us →</a>
-                        </div>
-                    </div>
-                </div>
+            <div id="eventsGrid" class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Dynamic event cards will be inserted here -->
             </div>
         </div>
     </section>
@@ -432,6 +381,8 @@
     <!-- AOS Animation Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/vets.js"></script>
+    <script src="js/events.js"></script>
     <script>
         AOS.init({
             duration: 800,
