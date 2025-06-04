@@ -23,7 +23,7 @@ menuButton.addEventListener('click', () => {
 // Function to fetch and render adoption listings
 async function loadAdoptionListings() {
     try {
-        const response = await fetch('data/adoption.json');
+        const response = await fetch('/WebsiteForAnimals/data/adoption.json');
         if (!response.ok) {
             throw new Error('Failed to fetch adoption data');
         }
