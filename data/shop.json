@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Dog Food",
+    "category": "Food",
+    "price": 29.99,
+    "image": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119",
+    "description": "High-quality dog food for all breeds.",
+    "availability": true
+  },
+  {
+    "id": 2,
+    "name": "Cat Toy",
+    "category": "Toys",
+    "price": 9.99,
+    "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba",
+    "description": "Interactive cat toy to keep your feline friend entertained.",
+    "availability": true
+  },
+  {
+    "id": 3,
+    "name": "Pet Bed",
+    "category": "Accessories",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b",
+    "description": "Comfortable pet bed for dogs and cats.",
+    "availability": false
+  }
+] 

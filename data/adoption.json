@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Max",
+    "species": "Dog",
+    "age": 2,
+    "gender": "Male",
+    "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1",
+    "description": "Max is a gentle soul who loves long walks and belly rubs. After being rescued from a difficult situation, he's now ready to find his forever home."
+  },
+  {
+    "id": 2,
+    "name": "Luna",
+    "species": "Cat",
+    "age": 1,
+    "gender": "Female",
+    "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba",
+    "description": "Luna is a playful and affectionate cat. She loves to cuddle and is great with children."
+  },
+  {
+    "id": 3,
+    "name": "Buddy",
+    "species": "Dog",
+    "age": 3,
+    "gender": "Male",
+    "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b",
+    "description": "Buddy is a loyal and energetic dog. He enjoys playing fetch and is very protective of his family."
+  }
+] 
