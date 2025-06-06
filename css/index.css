@@ -2,3 +2,124 @@ body { background: #f5e6d3; }
 .hero-overlay { background: rgba(0,0,0,0.4); }
 .quick-link:hover { background: #d4a373 !important; color: #fff !important; }
 @media (max-width: 768px) { .py-16 { padding-top: 2rem; padding-bottom: 2rem; } } 
+
+/* --- Event Detail Page Styles --- */
+
+/* Styling for the main container within the section */
+.event-detail-container > div {
+    /* Already has background, padding, shadow from .quiz-card reuse */
+}
+
+/* Style for individual detail sections */
+.event-detail-section {
+    margin-top: 2rem; /* Space above each section */
+    padding-top: 1.5rem; /* Space below heading */
+    border-top: 1px solid #e2e8f0; /* Separator line */
+}
+
+.event-detail-section:first-of-type {
+    border-top: none; /* No border on the first section */
+    padding-top: 0; /* No extra padding on the first section */
+    margin-top: 0; /* No extra margin on the first section */
+}
+
+/* Headings within sections */
+.event-detail-section h3 {
+    font-size: 1.75rem; /* Adjust size */
+    font-weight: bold; /* Bold font */
+    color: var(--primary-dark); /* Dark primary color */
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+/* Paragraphs in sections */
+.event-detail-section p {
+    line-height: 1.6; /* Improve readability */
+    color: #4a5568; /* Dark gray text */
+}
+
+/* Schedule list styling */
+.event-detail-section ul {
+    list-style-type: disc; /* Disc bullets */
+    margin-left: 1.5rem; /* Indent list items */
+}
+
+.event-detail-section ul li {
+    margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* Speakers grid and individual speaker cards */
+#speakersList {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+}
+
+#speakersList > div {
+    background-color: #f8f4f0; /* Light primary background */
+    border: 1px solid #d4a373; /* Primary color border */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 1rem; /* Inner padding */
+    display: flex; /* Use flex for content alignment */
+    align-items: center; /* Vertically align items */
+    space-x: 1rem; /* Tailwind utility for spacing */
+}
+
+#speakersList img {
+    width: 4rem; /* Fixed image size */
+    height: 4rem; /* Fixed image size */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Cover the area */
+    border: 2px solid var(--primary); /* Border around image */
+}
+
+#speakersList h4 {
+    font-weight: bold;
+    color: var(--primary-dark);
+    margin-bottom: 0.25rem; /* Space below speaker name */
+}
+
+#speakersList p {
+     font-size: 0.9rem;
+     color: #666;
+}
+
+/* Media gallery styling */
+#mediaGallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for media */
+}
+
+#mediaGallery img, #mediaGallery video {
+    border-radius: 0.5rem; /* Rounded corners for media */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Registration and Contact details */
+#registrationDetails a, #contactDetails a {
+    color: #3182ce; /* Blue color for links */
+    text-decoration: none; /* No underline by default */
+    transition: color 0.2s ease-in-out; /* Smooth color transition */
+}
+
+#registrationDetails a:hover, #contactDetails a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #2c5282; /* Darker blue on hover */
+}
+
+#contactDetails p i {
+     margin-right: 0.5rem; /* Space between icon and text */
+     color: var(--primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .event-detail-section h3 {
+        font-size: 1.5rem;
+    }
+
+    #speakersList > div {
+        flex-direction: column; /* Stack speaker info on small screens */
+        text-align: center;
+    }
+
+    #speakersList img {
+         margin-bottom: 0.5rem; /* Space below image */
+    }
+} 

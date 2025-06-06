@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - Paws & Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="font-sans">
+
+    <!-- Basic Header -->
+    <header class="bg-primary-light py-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-display font-bold text-primary-dark">Upcoming Events</h1>
+        <p class="text-lg text-gray-700 mt-4">Check back soon for our exciting upcoming events!</p>
+    </header>
+
+    <!-- Events Grid Container -->
+    <section class="container mx-auto px-4 py-20">
+        <div id="eventsGrid" class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Events will be dynamically loaded here by JavaScript -->
+            <div class="col-span-full text-center text-gray-600">
+                Loading upcoming events...
+            </div>
+        </div>
+    </section>
+
+    <!-- You might want to include a footer here later -->
+
+    <script src="js/events.js"></script>
+</body>
+</html> 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Match Quiz - Paws & Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-card">
+            <div class="progress-bar">
+                <div class="progress" id="progressBar"></div>
+                <div class="progress-text" id="progressText">Question 1 of 5</div>
+            </div>
+            
+            <div id="quizContent">
+                <h3 class="text-xl font-semibold mb-6">Loading quiz...</h3>
+            </div>
+
+            <div id="results" class="hidden">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Your Perfect Match</h2>
+                <div id="matchResult" class="text-lg text-gray-700"></div>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="adoption.html" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-bold transition transform hover:scale-105">
+                        View Available Pets
+                    </a>
+                    <button onclick="restartQuiz()" class="inline-block bg-gray-500 hover:bg-gray-600 text-white px-8 py-3 rounded-lg font-bold transition transform hover:scale-105">
+                        Take Quiz Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading" class="loading hidden">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html> 

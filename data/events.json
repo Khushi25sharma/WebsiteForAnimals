@@ -3,21 +3,63 @@
     "title": "Adoption Drive",
     "date": "2024-03-15",
     "location": "Central Park",
-    "description": "Join us for our monthly adoption event at Central Park. Meet our lovely pets looking for homes!",
-    "link": "#"
+    "description": "Join us for our monthly adoption event at Central Park.",
+    "fullDescription": "This month's adoption drive features a variety of cats and dogs looking for their forever homes. Volunteers will be on site to help you meet the animals and answer any questions. Adoption fees apply and help cover vaccination and care costs. Bring your family and find your new best friend!",
+    "link": "events.html",
+    "id": "adopt-drive-mar-15",
+    "schedule": [
+      { "time": "10:00 AM - 11:00 AM", "activity": "Meet & Greet" },
+      { "time": "11:00 AM - 12:00 PM", "activity": "Adoption Counseling" },
+      { "time": "12:00 PM - 2:00 PM", "activity": "Open Adoption Sessions" }
+    ],
+    "speakers": [],
+    "media": [
+      "assets/images/adoption-drive-photo1.jpg",
+      "assets/videos/adoption-drive-video1.mp4"
+    ],
+    "registration": { "required": false, "link": null },
+    "contact": { "email": "adopt@pawsandcare.org", "phone": "123-456-7890" }
   },
   {
     "title": "Vaccination Camp",
     "date": "2024-03-22",
     "location": "Community Center",
-    "description": "Free vaccination camp for stray animals. Volunteers needed!",
-    "link": "#"
+    "description": "Free vaccination camp for stray animals.",
+    "fullDescription": "We are organizing a free vaccination camp for stray animals in the community. Bring any stray animals you find for necessary vaccinations. Volunteers are highly needed and appreciated. Lunch will be provided for volunteers.",
+    "link": "events.html",
+    "id": "vaccination-camp-mar-22",
+    "schedule": [
+      { "time": "9:00 AM - 1:00 PM", "activity": "Vaccination Services" },
+      { "time": "1:00 PM - 2:00 PM", "activity": "Volunteer Lunch Break" },
+      { "time": "2:00 PM - 5:00 PM", "activity": "Vaccination Services (cont.)" }
+    ],
+    "speakers": [],
+    "media": [],
+    "registration": { "required": false, "link": null },
+    "contact": { "email": "volunteer@pawsandcare.org", "phone": "987-654-3210" }
   },
   {
     "title": "Pet Care Workshop",
     "date": "2024-04-01",
     "location": "Pet Care Center",
-    "description": "Learn essential pet care tips and tricks from our experts.",
-    "link": "#"
+    "description": "Learn essential pet care tips and tricks.",
+    "fullDescription": "Join our experts for a comprehensive workshop on essential pet care. Topics will include basic grooming, nutrition tips, recognizing signs of illness, and positive reinforcement training. This workshop is suitable for both new and experienced pet owners.",
+    "link": "events.html",
+    "id": "pet-care-workshop-apr-01",
+    "schedule": [
+      { "time": "10:00 AM - 12:00 PM", "activity": "Morning Session" },
+      { "time": "12:00 PM - 1:00 PM", "activity": "Lunch Break" },
+      { "time": "1:00 PM - 3:00 PM", "activity": "Afternoon Session" },
+      { "time": "3:00 PM - 4:00 PM", "activity": "Q&A with Experts" }
+    ],
+    "speakers": [
+      { "name": "Dr. Jane Smith", "bio": "Veterinarian with 10 years experience.", "photo": "assets/images/dr-jane-smith.jpg" },
+      { "name": "John Doe", "bio": "Certified Dog Trainer.", "photo": "assets/images/john-doe.jpg" }
+    ],
+    "media": [
+        "assets/images/pet-care-workshop-photo1.jpg"
+    ],
+    "registration": { "required": true, "link": "#registration-link" },
+    "contact": { "email": "info@pawsandcare.org", "phone": "111-222-3333" }
   }
 ] 

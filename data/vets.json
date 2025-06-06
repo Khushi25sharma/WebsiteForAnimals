@@ -1,21 +1,21 @@
 [
   {
     "name": "Dr. Meera Kapoor",
-    "photo": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2",
+    "photo": "assets/images/humberto-chavez-FVh_yqLR9eA-unsplash.jpg",
     "role": "Chief Veterinarian",
     "contact": "meera@pawsandcare.org",
     "availabilityStatus": "Available"
   },
   {
     "name": "Dr. Rahul Singh",
-    "photo": "https://images.unsplash.com/photo-1622253692010-333f2da6031d",
+    "photo": "assets/images/ozkan-guner-9xlZ8_NrzaA-unsplash.jpg",
     "role": "Behavioral Specialist",
     "contact": "rahul@pawsandcare.org",
     "availabilityStatus": "Busy"
   },
   {
     "name": "Dr. Ananya Patel",
-    "photo": "https://images.unsplash.com/photo-1594824476967-48c8b964273f",
+    "photo": "assets/images/bermix-studio-ODM_VsTM2QQ-unsplash.jpg",
     "role": "Preventive Care Specialist",
     "contact": "ananya@pawsandcare.org",
     "availabilityStatus": "Available"

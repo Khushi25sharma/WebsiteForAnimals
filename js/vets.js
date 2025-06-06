@@ -7,14 +7,21 @@ async function renderVolunteerVets() {
         }
         const vets = await response.json();
         const vetsGrid = document.getElementById('vetsGrid');
-
-        vets.forEach(vet => {
+        
+        // Create a document fragment to hold all cards
+        const fragment = document.createDocumentFragment();
+        
+        vets.forEach((vet, index) => {
             const card = document.createElement('div');
             card.className = 'bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300';
             card.setAttribute('data-aos', 'fade-up');
+            card.setAttribute('data-aos-delay', `${index * 100}`); // Stagger the animations
+
+            // Add specific styling for the second image
+            const imageClass = index === 1 ? 'w-full h-64 object-cover object-[center_30%]' : 'w-full h-64 object-cover';
 
             card.innerHTML = `
-                <img src="${vet.photo}" alt="${vet.name}" class="w-full h-64 object-cover">
+                <img src="${vet.photo}" alt="${vet.name}" class="${imageClass}">
                 <div class="p-6">
                     <h3 class="text-2xl font-bold text-primary-dark mb-2">${vet.name}</h3>
                     <p class="text-gray-600 mb-4">${vet.role}</p>
@@ -32,8 +39,11 @@ async function renderVolunteerVets() {
                 </div>
             `;
 
-            vetsGrid.appendChild(card);
+            fragment.appendChild(card);
         });
+
+        // Add all cards at once
+        vetsGrid.appendChild(fragment);
     } catch (error) {
         console.error('Error rendering volunteer vets:', error);
         const vetsGrid = document.getElementById('vetsGrid');
@@ -48,8 +58,9 @@ async function renderVolunteerVets() {
 // Initialize AOS and render vets when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
-        duration: 1000,
-        once: true
+        duration: 800,
+        once: true,
+        offset: 100 // Start animation slightly before element comes into view
     });
     renderVolunteerVets();
 }); 
